@@ -10,7 +10,7 @@ def display_board(board)
   end
 end
 
-def turn()
+def turn(board)
   puts "Please enter 1-9:"
   str = gets
   input_to_index(str)
