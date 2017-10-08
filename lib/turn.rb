@@ -10,6 +10,12 @@ def display_board(board)
   end
 end
 
+def turn()
+  puts "Please enter 1-9:"
+  str = gets
+  input_to_index(str)
+end
+
 def input_to_index(str)
   if str.class == "Fixnum"
     return (str.to_i - 1)
