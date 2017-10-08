@@ -45,7 +45,7 @@ def valid_move?(board, int)
 end
 
 def position_taken?(board,int)
-  if board[int] == "" || board[int] == nil || board[int] == " " then false
+  if board[int] == "" || board[int] == nil then false
   else true
   end
 end
