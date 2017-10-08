@@ -15,7 +15,10 @@ def turn(board)
   str = gets
 
   if (valid_move?(board,str) && position_taken(board,str))
-  input_to_index(str)
+    input_to_index(str)
+  else
+    turn(board)
+  end
 end
 
 def input_to_index(str)
