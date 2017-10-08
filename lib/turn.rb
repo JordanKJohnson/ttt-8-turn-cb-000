@@ -32,3 +32,7 @@ def position_taken?(board,int)
   else true
   end
 end
+
+def move(board, index, token)
+  board[index] = token;
+end
