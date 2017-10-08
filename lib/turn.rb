@@ -17,8 +17,14 @@ def turn(board)
   if (valid_move?(board,str.to_i) && position_taken?(board,str.to_i))
     input_to_index(str)
   else
-    turn(board)
+    doublecheck_turn(board)
   end
+end
+
+def doublecheck_turn(board)
+  puts "Please enter 1-9:"
+  str = gets
+  input_to_index(str)
 end
 
 def input_to_index(str)
