@@ -12,12 +12,12 @@ end
 
 def turn(board)
   puts "Please enter 1-9:"
-  str = gets
+  str = gets.chomp
 
   if (valid_move?(board,str.to_i) && position_taken?(board,str.to_i))
     input_to_index(str)
   else
-    doublecheck_turn(board)
+    turn(board)
   end
 end
 
